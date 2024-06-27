@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Rock-Paper-scissors</title>
+</head>
+<body>
+    <div>
+        <div class="flex flex-col bg-[#06192a]">
+            <h1 class="p-3 text-white text-3xl font-semibold self-center">Rock Paper Scissors</h1>
+        </div>
+
+        <div class="w-full h-[673px] flex flex-col justify-center items-center">
+
+            <div class="choices flex justify-center items-center">
+                <img id="rock" class="choice w-32 h-32 object-cover rounded-full m-5 cursor-pointer hover:scale-110" src="https://github.com/shradha-khapra/JavaScriptSeries/blob/main/StonePaperScissors/images/rock.png?raw=true" alt="Rock">
+                <img id="paper" class="choice w-32 h-32 object-cover rounded-full m-5 cursor-pointer hover:scale-110" src="https://github.com/shradha-khapra/JavaScriptSeries/blob/main/StonePaperScissors/images/paper.png?raw=true" alt="Paper">
+                <img id="scissors" class="choice w-32 h-32 object-cover rounded-full m-5 cursor-pointer hover:scale-110" src="https://github.com/shradha-khapra/JavaScriptSeries/blob/main/StonePaperScissors/images/scissors.png?raw=true" alt="Scissors">
+            </div>
+    
+            <div class="score-board flex justify-center items-center">
+
+                <div class="score flex flex-col justify-center items-center m-6">
+                    <p id="user-score" class="text-5xl p-2">0</p>
+                    <p class="text-2xl font-semibold">You</p>
+                </div>
+
+                <div class="score flex flex-col justify-center items-center">
+                    <p id="comp-score" class="text-5xl p-2">0</p>
+                    <p class="text-2xl font-semibold">Comp</p>
+                </div>
+
+            </div>
+    
+            <div class="flex justify-center">
+                <button id="btn" class="bg-black text-white text-2xl py-2 px-4 ml-5 mt-4 rounded-xl">Pick your move</button>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="RPS.js"></script>
+</body>
+</html>
